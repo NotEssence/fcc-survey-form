@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <h1 id="title">The FCC Survey Form</h1>
+
+    <p id="description"><em>Thank you for taking your time to fill this form, it really helps!</em></p>
+
+    <main>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+            <label for="email" id="email-label">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+            <label for="number" id="number-label">Age: </label>
+            <input type="number" name="number" id="number" placeholder="Enter your age" min="0" max="500">
+
+            <label for="dropdown" id="select-label">What are you using FCC for?</label>
+            <select name="dropdown" id="dropdown">
+                <option value="school">School</option>
+                <option value="curious">Because I'm curious</option>
+            </select>
+
+            <p id="do-you-like-fcc">Do you like FCC?</p>
+
+            <div id="like-fcc-radios">
+                <input type="radio" name="like-fcc" value="yes" id="like-fcc-yes">
+                <label for="like-fcc-yes">Yes</label>
+
+                <input type="radio" name="like-fcc" value="no" id="like-fcc-no">
+                <label for="like-fcc-no">No</label>
+
+                <input type="radio" name="like-fcc" value="not-sure" id="like-fcc-not-sure">
+                <label for="like-fcc-not-sure">Not sure</label>
+            </div>
+
+            <p id="think-needs-improving">What do you think needs improving?</p>
+
+            <div id="needs-improving-checkboxes">
+                <input type="checkbox" name="needs-improving" value="challenges" id="challenges">
+                <label for="challenges">Challenges</label>
+
+                <input type="checkbox" name="needs-improving" value="wiki" id="wiki">
+                <label for="like-fcc-no">Wiki</label>
+
+                <input type="checkbox" name="needs-improving" value="additional-courses" id="additional-courses">
+                <label for="like-fcc-not-sure">Additional courses</label>
+            </div>
+
+            <!--For some reason the margin isn't working-->
+            <p id="additional-comments-p">Additional comments and suggestions: </label>
+            <textarea name="additional-comments" placeholder="Enter your comments and suggestions"></textarea>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>
